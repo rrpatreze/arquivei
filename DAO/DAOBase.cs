@@ -12,7 +12,6 @@ namespace DAO
 {
     public class DAOBase<T> : DAOBase where T : class
     {
-
         public T GetById(long id)
         {
             using (var connection = new SqlConnection(ConnectionString))
@@ -20,7 +19,6 @@ namespace DAO
                 return connection.Get<T>(id);
             }
         }
-
 
         public List<T> Query(string str, dynamic param = null)
         {
@@ -45,7 +43,6 @@ namespace DAO
                 return connection.GetAll<T>().ToList();
             }
         }
-
         public List<T> Find(Func<T, bool> filter)
         {
             using (var connection = new SqlConnection(ConnectionString))
@@ -191,6 +188,5 @@ namespace DAO
                             commandTimeout: 120, commandType: commandType);
             }
         }
-
     }
 }

@@ -7,9 +7,19 @@ namespace Receiver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            ReceiverController rc = new ReceiverController();
-            bool b = rc.getNFe();
+            Console.WriteLine("Desafio Arquivei");
+
+            try
+            {
+                ReceiverController rc = new ReceiverController();
+                Entity.ReceivedResponse respAPI = rc.GetNFeFromAPI();
+
+                rc.InsertNFeDataBase(respAPI);
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }
