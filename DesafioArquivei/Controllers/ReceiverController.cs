@@ -93,52 +93,7 @@ namespace DesafioArquivei.Controllers
             }
         }
 
-        /*
-        private double getNFTotalValue(string base64Enconded)
-        {
-            string base64Decoded;
-            double ret = 0d;
-
-            byte[] data = System.Convert.FromBase64String(base64Enconded);
-            base64Decoded = System.Text.ASCIIEncoding.ASCII.GetString(data);
-
-            //base64Decoded = base64Decoded.Replace("<nfeProc xmlns=\"http://www.portalfiscal.inf.br/nfe\" versao=\"3.10\">", "");
-            //base64Decoded = base64Decoded.Replace("</nfeProc>", "");
-            //base64Decoded = base64Decoded.Replace("<NFe>", "<NFe xmlns = \"http://www.portalfiscal.inf.br/nfe\" >");
-
-            XmlSerializer serializerPrinc = new XmlSerializer(typeof(Entity.NFePrincipal.nfeProc));
-            XmlSerializer serializerSec = new XmlSerializer(typeof(Entity.NFeSecundaria.NFe));
-
-            using (TextReader reader = new StringReader(base64Decoded))
-            {
-                try
-                {
-                    var nfePrinc = (Entity.NFePrincipal.nfeProc)serializerPrinc.Deserialize(reader);
-                    ret = double.Parse(nfePrinc.NFe.infNFe.total.ICMSTot.vNF.ToString());
-                    return ret;
-                }
-                catch (Exception e)
-                {
-                    using (TextReader reader2 = new StringReader(base64Decoded))
-                    {
-                        try
-                        {
-                            var nfeSec = (Entity.NFeSecundaria.NFe)serializerSec.Deserialize(reader2);
-                            ret = double.Parse(nfeSec.infNFe.total.ICMSTot.vNF.ToString());
-                            return ret;
-                        }
-                        catch (Exception e2)
-                        {
-                            throw new Exception(e2.Message);
-                        }
-                    }
-                }
-            }
-            return -1d;
-        }
-    }
-    */
-
+        
         private double getNFTotalValue(string base64Enconded)
         {
             string base64Decoded;
