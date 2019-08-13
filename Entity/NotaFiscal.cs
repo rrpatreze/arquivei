@@ -1,10 +1,9 @@
 ﻿using Dapper.Contrib.Extensions;
-using System;
 
 namespace Entity
 {
     [Table("nota_fiscal")]
-    public class nota_fiscal
+    public class NotaFiscal
     {
         [Key]
         public string access_key { get; set; }
