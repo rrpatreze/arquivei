@@ -20,12 +20,13 @@ Trata-se de uma API restful exposta através do método GET que necessita recebe
 ## Como utilizar:
 1. Em [release](https://github.com/rrpatreze/arquivei/releases), fazer o download do arquivo *BuscarValorTotalNota.zip*;
 2. Descompactar o arquivo em um diretório local;
-3. Executar o arquivo *DesafioArquivei.exe* 
+3. Executar o arquivo *DesafioArquivei.exe* para subir a API no ar
+4. Abrir um browser e acessar a URL fornecida
 
 Request
 - Get: /api/receiver/{id}
 
-- Exemplo: /api/receiver/35140330290824000104550010003715421390782397
+- Exemplo: http://localhost:5000/api/receiver/35140330290824000104550010003715421390782397
 
 ## Resultado Esperado:
 
