@@ -3,7 +3,7 @@
 ## Descrição:
 Trata-se de uma aplicação do tipo Console que irá consumir a API disponibilizada pela Arquivei e salvar a chave de acesso e valor total das notas fiscais eletronicas em uma base de dados SQL Server.
 
-## Como utilizar:
+## Como Utilizar:
 1. Em [release](https://github.com/rrpatreze/arquivei/releases), fazer o download do arquivo *CarregarNotas.zip*;
 2. Descompactar o arquivo em um diretório local;
 3. Executar o arquivo *Receiver.exe*
@@ -17,7 +17,7 @@ Ao executar, um prompt do DOS será aberto e irá exibir o código de acesso e o
 ## Descrição:
 Trata-se de uma API restful exposta através do método GET que necessita receber uma chave de acesso para retornar o valor total da nota fiscal eletronica.
 
-## Como utilizar:
+## Como Utilizar:
 1. Em [release](https://github.com/rrpatreze/arquivei/releases), fazer o download do arquivo *BuscarValorTotalNota.zip*;
 2. Descompactar o arquivo em um diretório local;
 3. Executar o arquivo *DesafioArquivei.exe* para subir a API no ar
