@@ -34,5 +34,5 @@ Request
 *Nota: "35140330290824000104550010003715421390782397"*  
 *Valor: 365.89*
 
-- Caso nao seja encontrado o código de acesso na base dados:  
+- Caso não seja encontrado o código de acesso na base dados:  
 *Nota: "xyz" nao encontrada*
